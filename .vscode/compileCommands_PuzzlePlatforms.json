@@ -1,0 +1,37 @@
+[
+	{
+		"file": "D:\\\\Varcx\\\\Unreal Projects\\\\PuzzlePlatforms\\\\Source\\\\PuzzlePlatforms\\\\PuzzlePlatforms.Build.cs",
+		"command": "cl.exe @\"D:\\Varcx\\Unreal Projects\\PuzzlePlatforms\\.vscode\\compileCommands_PuzzlePlatforms\\PuzzlePlatforms.182.rsp\"",
+		"directory": "D:\\Games\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Varcx\\\\Unreal Projects\\\\PuzzlePlatforms\\\\Source\\\\PuzzlePlatforms\\\\PuzzlePlatforms.cpp",
+		"command": "cl.exe @\"D:\\Varcx\\Unreal Projects\\PuzzlePlatforms\\.vscode\\compileCommands_PuzzlePlatforms\\PuzzlePlatforms.182.rsp\"",
+		"directory": "D:\\Games\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Varcx\\\\Unreal Projects\\\\PuzzlePlatforms\\\\Source\\\\PuzzlePlatforms\\\\PuzzlePlatforms.h",
+		"command": "cl.exe @\"D:\\Varcx\\Unreal Projects\\PuzzlePlatforms\\.vscode\\compileCommands_PuzzlePlatforms\\PuzzlePlatforms.182.rsp\"",
+		"directory": "D:\\Games\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Varcx\\\\Unreal Projects\\\\PuzzlePlatforms\\\\Source\\\\PuzzlePlatforms\\\\PuzzlePlatformsCharacter.cpp",
+		"command": "cl.exe @\"D:\\Varcx\\Unreal Projects\\PuzzlePlatforms\\.vscode\\compileCommands_PuzzlePlatforms\\PuzzlePlatforms.182.rsp\"",
+		"directory": "D:\\Games\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Varcx\\\\Unreal Projects\\\\PuzzlePlatforms\\\\Source\\\\PuzzlePlatforms\\\\PuzzlePlatformsCharacter.h",
+		"command": "cl.exe @\"D:\\Varcx\\Unreal Projects\\PuzzlePlatforms\\.vscode\\compileCommands_PuzzlePlatforms\\PuzzlePlatforms.182.rsp\"",
+		"directory": "D:\\Games\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Varcx\\\\Unreal Projects\\\\PuzzlePlatforms\\\\Source\\\\PuzzlePlatforms\\\\PuzzlePlatformsGameMode.cpp",
+		"command": "cl.exe @\"D:\\Varcx\\Unreal Projects\\PuzzlePlatforms\\.vscode\\compileCommands_PuzzlePlatforms\\PuzzlePlatforms.182.rsp\"",
+		"directory": "D:\\Games\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Varcx\\\\Unreal Projects\\\\PuzzlePlatforms\\\\Source\\\\PuzzlePlatforms\\\\PuzzlePlatformsGameMode.h",
+		"command": "cl.exe @\"D:\\Varcx\\Unreal Projects\\PuzzlePlatforms\\.vscode\\compileCommands_PuzzlePlatforms\\PuzzlePlatforms.182.rsp\"",
+		"directory": "D:\\Games\\Epic Games\\UE_4.26\\Engine\\Source"
+	}
+]
