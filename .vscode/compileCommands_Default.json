@@ -1,5 +1,15 @@
 [
 	{
+		"file": "D:\\\\Varcx\\\\Unreal Projects\\\\PuzzlePlatforms\\\\Source\\\\PuzzlePlatforms\\\\MovingPlatform.cpp",
+		"command": "cl.exe @\"D:\\Varcx\\Unreal Projects\\PuzzlePlatforms\\.vscode\\compileCommands_Default\\PuzzlePlatforms.182.rsp\"",
+		"directory": "D:\\Games\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Varcx\\\\Unreal Projects\\\\PuzzlePlatforms\\\\Source\\\\PuzzlePlatforms\\\\MovingPlatform.h",
+		"command": "cl.exe @\"D:\\Varcx\\Unreal Projects\\PuzzlePlatforms\\.vscode\\compileCommands_Default\\PuzzlePlatforms.182.rsp\"",
+		"directory": "D:\\Games\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
 		"file": "D:\\\\Varcx\\\\Unreal Projects\\\\PuzzlePlatforms\\\\Source\\\\PuzzlePlatforms\\\\PuzzlePlatforms.Build.cs",
 		"command": "cl.exe @\"D:\\Varcx\\Unreal Projects\\PuzzlePlatforms\\.vscode\\compileCommands_Default\\PuzzlePlatforms.182.rsp\"",
 		"directory": "D:\\Games\\Epic Games\\UE_4.26\\Engine\\Source"
