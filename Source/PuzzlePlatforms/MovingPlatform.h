@@ -14,15 +14,21 @@ class PUZZLEPLATFORMS_API AMovingPlatform : public AStaticMeshActor
 {
 	GENERATED_BODY()
 
-	public:
-		AMovingPlatform();
+public:
+	AMovingPlatform();
 
-		virtual void BeginPlay() override;
+	virtual void BeginPlay() override;
 
-		UPROPERTY(EditAnywhere)
-		float Speed = 5;
+	UPROPERTY(EditAnywhere)
+	float Speed = 5;
 
-	protected: 
-		virtual void Tick(float DeltaTime) override; 
-	
+	UPROPERTY(EditAnywhere, Meta = (MakeEditWidget = true)) // Meta = (MakeEditWidget = true) - Shows a widget named TargetLocation in the editor
+	FVector TargetLocation;
+
+protected:
+	virtual void Tick(float DeltaTime) override;
+
+private:
+	FVector GlobalStartLocation;
+	FVector GlobalTargetLocation;
 };
