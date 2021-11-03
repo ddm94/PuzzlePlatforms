@@ -31,30 +31,45 @@ void AMovingPlatform::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
 
-    if (HasAuthority()) // !HasAuthority == Not on server; Client
+    // Move only if we have ActiveTriggers
+    if (ActiveTriggers > 0)
     {
-        FVector Location = GetActorLocation();
-        float JourneyLength =  (GlobalTargetLocation - GlobalStartLocation).Size();
-        float JourneyTravelled = (Location - GlobalStartLocation).Size();
-
-        if (JourneyTravelled >= JourneyLength) 
+        if (HasAuthority()) // !HasAuthority == Not on server; Client
         {
-            FVector Swap = GlobalStartLocation;
+            FVector Location = GetActorLocation();
+            float JourneyLength = (GlobalTargetLocation - GlobalStartLocation).Size();
+            float JourneyTravelled = (Location - GlobalStartLocation).Size();
 
-            GlobalStartLocation = GlobalTargetLocation;
-            GlobalTargetLocation = Swap;
+            if (JourneyTravelled >= JourneyLength)
+            {
+                FVector Swap = GlobalStartLocation;
+
+                GlobalStartLocation = GlobalTargetLocation;
+                GlobalTargetLocation = Swap;
+            }
+
+            // Convert TargetLocation which is a local FVector into a global one.
+            // FVector GlobalTargetLocation = GetTransform().TransformPosition(TargetLocation);
+
+            FVector Direction = (GlobalTargetLocation - GlobalStartLocation).GetSafeNormal();
+
+            // Location += FVector(Speed * DeltaTime, 0, 0);
+
+            Location += Speed * DeltaTime * Direction;
+
+            // Update actor location
+            SetActorLocation(Location);
         }
-        
-        // Convert TargetLocation which is a local FVector into a global one.
-        // FVector GlobalTargetLocation = GetTransform().TransformPosition(TargetLocation);
-
-        FVector Direction = (GlobalTargetLocation - GlobalStartLocation).GetSafeNormal();
-
-        //Location += FVector(Speed * DeltaTime, 0, 0);
-
-        Location += Speed * DeltaTime * Direction;
-
-        // Update actor location
-        SetActorLocation(Location);
     }
+}
+
+void AMovingPlatform::AddActiveTrigger()
+{
+    ActiveTriggers++;
+}
+
+void AMovingPlatform::RemoveActiveTrigger()
+{
+    if (ActiveTriggers > 0)
+        ActiveTriggers--;
 }

@@ -25,10 +25,17 @@ public:
 	UPROPERTY(EditAnywhere, Meta = (MakeEditWidget = true)) // Meta = (MakeEditWidget = true) - Shows a widget named TargetLocation in the editor
 	FVector TargetLocation;
 
+	// Interface
+	void AddActiveTrigger();
+	void RemoveActiveTrigger();
+
 protected:
 	virtual void Tick(float DeltaTime) override;
 
 private:
 	FVector GlobalStartLocation;
 	FVector GlobalTargetLocation;
+
+	UPROPERTY(EditAnywhere)
+	int ActiveTriggers = 1;
 };
